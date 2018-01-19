@@ -26,7 +26,7 @@ public class TaskListUi {
 			public void onComplete() {
 				System.out.println("Nummer zum Editieren eingeben");
 				System.out.println("c: Neuen Task anlegen");
-				System.out.println("q: Zurück zum Menu");
+				System.out.println("q: ZurÃ¼ck zum Menu");
 				consoleSubscriber = consoleInput.subscribe(new Consumer<String>() {
 
 					@Override

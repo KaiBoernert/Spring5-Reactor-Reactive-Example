@@ -2,18 +2,18 @@ package de.oio.server.model;
 
 import java.util.Date;
 
-import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
- *  The simple Database object, note that this is also use as a DTO in communication for simplicity reasons
+ * The simple Database object, note that this is also use as a DTO in
+ * communication for simplicity reasons
  */
 @XmlRootElement(name = "taskitem")
 @Document
 public class TaskItem {
-	@Id
+	@org.springframework.data.annotation.Id
 	private Long id = null;
 	private String title;
 	private String description;
@@ -33,7 +33,7 @@ public class TaskItem {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
+
 	public Long getId() {
 		return id;
 	}

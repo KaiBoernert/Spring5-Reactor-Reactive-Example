@@ -53,7 +53,7 @@ public class TaskItemServiceImpl implements TaskItemService {
 	public void finishTask(Long id) {
 		getTask(id).subscribe(task -> {
 			task.setDone(true);
-			// Hier wird zugunsten der Übersichtlichkeit auf Fehlerüberprüfung verzichtet
+			//a real application should have validation here
 			repository.save(task).subscribe();
 		});
 	}

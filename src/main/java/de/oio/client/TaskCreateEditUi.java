@@ -13,6 +13,7 @@ import reactor.core.Disposable;
 import reactor.core.publisher.DirectProcessor;
 import reactor.core.publisher.Mono;
 
+
 public class TaskCreateEditUi {
 
 	private Disposable consoleSubscription;
@@ -196,7 +197,7 @@ public class TaskCreateEditUi {
 
 	protected void taskFieldEdit(DirectProcessor<String> consoleInput, String feldName, TaskItem toEditOrEmpty,
 			Consumer<String> consumer) {
-		System.out.println("Feld ändern " + feldName);
+		System.out.println("Feld Ã¤ndern " + feldName);
 		consoleSubscription = consoleInput.subscribe(new Consumer<String>() {
 
 			@Override
